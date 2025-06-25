@@ -1,79 +1,62 @@
 
-# Data Warehouse and Analytics Project
+# 📦 Data Warehouse and Analytics Project 
 
-Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+I built this data warehouse project to demonstrate my skills in **ETL**, **data modeling**, and **analytics** using **SQL Server**, following industry best practices.
 
 ---
+
 ## 🏗️ Data Architecture
 
-The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
-![Data Architecture](docs/data_architecture.png)
+In this project, I followed the **Medallion Architecture** pattern with **Bronze**, **Silver**, and **Gold** layers to structure and refine data progressively:
 
-1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
+- **Bronze Layer**: I ingested raw data directly from CSV files into staging tables in the SQL Server database, preserving the source format for traceability.  
+- **Silver Layer**: I performed data cleaning, standardization, and normalization to prepare structured, analysis-ready datasets.  
+- **Gold Layer**: I then transformed the clean data into a **star schema** with fact and dimension tables, optimized for reporting and business analytics.
 
 ---
+
 ## 📖 Project Overview
 
 This project involves:
 
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
+1. **Data Architecture** – Designing a modern data warehouse using Medallion Architecture (Bronze, Silver, Gold).
+2. **ETL Pipelines** – Extracting, transforming, and loading data from source systems into the warehouse.
+3. **Data Modeling** – Developing fact and dimension tables optimized for analytical queries.
+4. **Analytics & Reporting** – Creating SQL-based reports and dashboards for actionable insights.
 
-🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:
-- SQL Development
-- Data Architect
+🎯 This repository demonstrates my skills in:
+
+- SQL Development  
+- Data Architecture  
 - Data Engineering  
-- ETL Pipeline Developer  
+- ETL Pipeline Development  
 - Data Modeling  
 - Data Analytics  
 
 ---
 
-## 🛠️ Important Links & Tools:
+## 📋 Specifications
 
-Everything is for Free!
-- **[Datasets](datasets/):** Access to the project dataset (csv files).
-- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Lightweight server for hosting your SQL database.
-- **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
-- **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
-- **[DrawIO](https://www.drawio.com/):** Design data architecture, models, flows, and diagrams.
-- **[Notion](https://www.notion.com/):** All-in-one tool for project management and organization.
-- **[Notion Project Steps](https://thankful-pangolin-2ca.notion.site/SQL-Data-Warehouse-Project-16ed041640ef80489667cfe2f380b269?pvs=4):** Access to All Project Phases and Tasks.
+- **Data Sources**: I imported data from two source systems (ERP and CRM), both provided as CSV files.  
+- **Data Quality**: I cleaned and resolved data quality issues such as missing values, duplicates, and inconsistencies before loading into the warehouse.  
+- **Integration**: I combined the ERP and CRM data into a unified, analysis-friendly data model optimized for querying.  
+- **Scope**: This project focuses on the most recent data only; historization or slowly changing dimensions were not implemented.  
+- **Documentation**: I documented the data model clearly to support both technical users and business stakeholders.
 
 ---
 
-## 🚀 Project Requirements
+## 📊 BI: Analytics & Reporting
 
-### Building the Data Warehouse (Data Engineering)
+I developed SQL-based analytical queries to deliver actionable insights into key business areas:
 
-#### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
-
-#### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+- **Customer Behavior**: Analyzed purchasing patterns, repeat customer rates, and engagement across different segments.  
+- **Product Performance**: Identified top-performing and underperforming products based on sales volume and revenue contribution.  
+- **Sales Trends**: Uncovered temporal patterns, such as seasonal spikes, daily averages, and monthly sales growth across regions or product categories.
 
 ---
 
-### BI: Analytics & Reporting (Data Analysis)
+For more details, refer to [documents/requirements.md](documents/requirements.md).
 
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
-
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
-
-For more details, refer to [docs/requirements.md](docs/requirements.md).
 
 ## 📂 Repository Structure
 ```
@@ -106,17 +89,5 @@ data-warehouse-project/
 
 ## 🛡️ License
 
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
-
-## 🌟 About Me
-
-Hi there! I'm **Baraa Khatib Salkini**, also known as **Data With Baraa**. I’m an IT professional and passionate YouTuber on a mission to share knowledge and make working with data enjoyable and engaging!
-
-Let's stay in touch! Feel free to connect with me on the following platforms:
-
-[![YouTube](https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white)](http://bit.ly/3GiCVUE)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/baraa-khatib-salkini)
-[![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.datawithbaraa.com)
-[![Newsletter](https://img.shields.io/badge/Newsletter-FF5722?style=for-the-badge&logo=substack&logoColor=white)](https://bit.ly/BaraaNewsletter)
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/baraasalkini)
-[![Join](https://img.shields.io/badge/Join-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@datawithbaraa)
+This project is licensed under the [MIT License](LICENSE).
+AUTHOR:Peter Opapa@2025
