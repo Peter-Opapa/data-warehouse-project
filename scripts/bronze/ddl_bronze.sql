@@ -1,4 +1,5 @@
-/*This script creates tables in the 'bronze' schema, dropping existing tables 
+/*        DDL Script: Creating Bronze Tables
+This script creates tables in the 'bronze' schema, dropping existing tables 
     if they already exist.*/
 IF OBJECT_ID('bronze.crm_customer_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_customer_info;
