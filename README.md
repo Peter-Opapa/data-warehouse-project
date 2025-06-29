@@ -39,7 +39,7 @@ This project involves:
 - **Data Quality**: I cleaned and resolved data quality issues such as missing values, duplicates, and inconsistencies before loading into the warehouse.  
 - **Integration**: I combined the ERP and CRM data into a unified, analysis-friendly data model optimized for querying.  
 - **Scope**: This project focuses on the most recent data only; historization or slowly changing dimensions were not implemented.  
-- **Documentation**: I documented the data model clearly to support both technical users and business stakeholders.
+
 
 
 ## 📂 Repository Structure
