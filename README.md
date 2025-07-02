@@ -1,72 +1,72 @@
+# 📦 Data Warehouse Project
 
-# 📦 Data Warehouse Project 
-
-I built this data warehouse project to demonstrate my skills in **ETL**, **data modeling**, and **analytics** using **SQL Server** focusing on industry best practices.
+I built this data warehouse project to demonstrate my skills in **ETL**, **data modeling**, and **analytics** using **SQL Server**, following industry best practices.
 
 ---
 
 ## 🏗️ Data Architecture
 
-In this project, I followed the **Medallion Architecture** pattern with **Bronze**, **Silver**, and **Gold** layers to structure and refine data progressively:
+This project uses the **Medallion Architecture** with three layers to progressively refine and structure data:
 
-- **Bronze Layer**: I ingested raw data directly from CSV files into staging tables in the SQL Server database, preserving the source format for traceability.  
-- **Silver Layer**: I performed data cleaning, standardization, and normalization to prepare structured, analysis-ready datasets.  
-- **Gold Layer**: I then transformed the clean data into a **star schema** with fact and dimension tables, optimized for reporting and business analytics.
+- **🔸 Bronze Layer**: Raw data ingested directly from CSV files into staging tables to preserve original format.
+- **🔹 Silver Layer**: Cleaned, standardized, and normalized data to make it analysis-ready.
+- **🏅 Gold Layer**: Final transformation into a **star schema** with fact and dimension tables optimized for BI and reporting.
 
 ---
 
 ## 📖 Project Overview
 
-This project involves:
+This project covers:
 
-1. **Data Architecture** – Designing a modern data warehouse using Medallion Architecture (Bronze, Silver, Gold).
-2. **ETL Pipelines** – Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling** – Developing fact and dimension tables optimized for analytical queries.
+1. **Data Architecture** – Building a scalable modern warehouse using Medallion architecture.
+2. **ETL Pipelines** – Extracting, transforming, and loading structured data into SQL Server.
+3. **Data Modeling** – Designing star schemas for efficient querying and business insights.
 
-🎯 This repository demonstrates my skills in:
+### 🧠 Key Skills Demonstrated
 
 - SQL Development  
-- Data Architecture  
-- Data Engineering  
-- ETL Pipeline Development  
-- Data Modeling   
+- Data Engineering & Pipelines  
+- Data Cleaning & Integration  
+- Dimensional Modeling  
+- Analytical Thinking  
 
 ---
 
 ## 📋 Specifications
 
-- **Data Sources**: I imported data from two source systems (ERP and CRM), both provided as CSV files.  
-- **Data Quality**: I cleaned and resolved data quality issues such as missing values, duplicates, and inconsistencies before loading into the warehouse.  
-- **Integration**: I combined the ERP and CRM data into a unified, analysis-friendly data model optimized for querying.  
-- **Scope**: This project focuses on the most recent data only; historization or slowly changing dimensions were not implemented.  
+- **Data Sources**: Two CSV files representing ERP and CRM systems.
+- **Data Quality**: Cleaned missing values, handled duplicates, and resolved inconsistencies.
+- **Data Integration**: Unified ERP and CRM data into a single, analytics-friendly model.
+- **Scope**: Focused on recent transactional data; no SCD or historization implemented.
 
-
-
-## 📂 Repository Structure
-```
-data-warehouse-project/
-│
-├── project_data/                       # Raw datasets used for the project (ERP and CRM data)
-│
-├── documents/                          # Project documentation and architecture details
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
-├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Scripts for extracting and loading raw data
-│   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
-│
-├── quality_checks/                     # Test scripts and quality files
-│
-├── README.md                           # Project overview and instructions
-├── LICENSE                             # License information for the repository
-```
 ---
 
+## 📂 Repository Structure
+
+```bash
+data-warehouse-project/
+│
+├── project_data/               # Raw datasets (ERP and CRM)
+│
+├── documents/                  # Architecture docs and diagrams
+│   ├── data_catalog.md
+│   ├── data_flow.drawio
+│   ├── data_models.drawio
+│
+├── scripts/                    # SQL scripts organized by layers
+│   ├── bronze/
+│   ├── silver/
+│   ├── gold/
+│
+├── quality_checks/            # Data validation and quality test files
+│
+├── README.md                  # Project overview and instructions
+├── LICENSE                    # License info
+
+```
 
 ## 🛡️ License
 
 This project is licensed under the [MIT License](LICENSE).
 
-AUTHOR:Peter Opapa@2025
+Author: Peter Opapa © 2025
