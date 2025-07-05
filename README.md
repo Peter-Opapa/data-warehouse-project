@@ -12,6 +12,8 @@ This project uses the **Medallion Architecture** with three layers to progressiv
 - **🔹 Silver Layer**: Cleaned, standardized, and normalized data to make it analysis-ready.
 - **🏅 Gold Layer**: Final transformation into a **star schema** with fact and dimension tables optimized for BI and reporting.
 
+  ![Data Architecture](https://github.com/Peter-Opapa/data-warehouse-project/blob/main/documents/data_architecture.png)
+
 ---
 
 ## 📖 Project Overview
